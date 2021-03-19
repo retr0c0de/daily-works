@@ -1,0 +1,15 @@
+[
+  {
+    "user_profile": {
+      "id": "a3c726d7-1ad2-4868-801b-3eee7011a618",
+      "category": "employee",
+      "name": "Micheal Scott",
+      "email": "scott.micheal@dunder.mifflin.com",
+      "phone": "01234981234"
+    },
+    "user_telemetry": {
+      "jobsCompleted": "101",
+      "rating": "⭐⭐⭐⭐⭐"
+    }
+  }
+]

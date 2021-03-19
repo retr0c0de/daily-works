@@ -1,0 +1,18 @@
+[
+  {
+    "socialMedia": "Facebook",
+    "profileLink": "https://www.facebook.com/"
+  },
+  {
+    "socialMedia": "Twitter",
+    "profileLink": "https://www.twitter.com/"
+  },
+  {
+    "socialMedia": "LinkedIn",
+    "profileLink": "https://www.linkedin.com/"
+  },
+  {
+    "socialMedia": "Instagram",
+    "profileLink": "https://www.instagram.com/"
+  }
+]
