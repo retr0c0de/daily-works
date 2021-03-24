@@ -3,18 +3,16 @@ import LinkButton from "../Atoms/LinkButton";
 
 const AuthButtons = () => {
   return (
-    <div className="order-3 sm:space-x-1 justify-self-end">
+    <div className="flex flex-col order-3 object-contain space-x-1 sm:flex-row">
       <LinkButton
         router="/login"
         routerName="Log In"
         isPrimary={false}
-        bgColor="indigo"
       />
       <LinkButton
         router="/register"
         routerName="Sign Up"
         isPrimary={true}
-        bgColor="indigo"
       />
     </div>
   );

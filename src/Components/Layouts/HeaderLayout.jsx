@@ -18,21 +18,23 @@ const HeaderLayout = () => {
   };
 
   return (
-    <header className="flex flex-row items-center justify-between h-16 px-2 space-x-2">
-      <div className="flex flex-row items-center w-auto h-16 px-2 space-x-2">
-        <HamMenu toggleHam={toggleHam} isHamShown={isHamShown} />
+    <div className="w-full h-16 shadow-sm">
+      <header className="fixed flex flex-row items-center justify-between w-full h-16 px-2 space-x-2 bg-fixed bg-gray-50">
+        <div className="flex flex-row items-center w-auto h-16 px-2 space-x-2">
+          <HamMenu toggleHam={toggleHam} isHamShown={isHamShown} />
 
-        <AppLogo />
-      </div>
+          <AppLogo />
+        </div>
 
-      <NavigationLayout
-        toggleHam={toggleHam}
-        isHamShown={isHamShown}
-        toggleMobileNav={toggleMobileNav}
-      />
+        <NavigationLayout
+          toggleHam={toggleHam}
+          isHamShown={isHamShown}
+          toggleMobileNav={toggleMobileNav}
+        />
 
-      {isLoggedIn ? <LoggedIcons /> : <AuthButtons />}
-    </header>
+        {isLoggedIn ? <LoggedIcons /> : <AuthButtons />}
+      </header>
+    </div>
   );
 };
 

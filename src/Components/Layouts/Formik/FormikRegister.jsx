@@ -3,7 +3,7 @@ import React from 'react'
 import { IoHomeSharp } from 'react-icons/io5'
 import * as Yup from 'yup'
 import LinkButton from '../../Atoms/LinkButton'
-import FormikControl from '../Formik/FormikControl'
+import FormikControl from './FormikControl'
 
 const style = {
   label: 'font-semibold text-sm text-gray-600 pb-1 block',

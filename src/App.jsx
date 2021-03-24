@@ -1,22 +1,14 @@
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import HeaderLayout from "./Components/Layouts/HeaderLayout";
-import FooterLayout from "./Components/Layouts/FooterLayout";
-import LoginLayout from "./Components/Layouts/Contents/LoginLayout";
-import RegisterLayout from "./Components/Layouts/Contents/RegisterLayout";
-import AboutUsLayout from "./Components/Layouts/AboutUsLayout";
-import HomeLayout from "./Components/Layouts/HomeLayout";
+import FooterLayout from './Components/Layouts/FooterLayout'
+import HeaderLayout from './Components/Layouts/HeaderLayout'
 
-function App() {
+function App({ children }) {
   return (
-    <Router>
+    <>
       <HeaderLayout />
-      <Route path="/" exact component={HomeLayout} />
-      <Route path="/register" component={RegisterLayout} />
-      <Route path="/login" component={LoginLayout} />
-      <Route path="/about" component={AboutUsLayout} />
+      {children}
       <FooterLayout />
-    </Router>
-  );
+    </>
+  )
 }
 
-export default App;
+export default App
